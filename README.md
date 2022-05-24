@@ -14,8 +14,10 @@ ___
 - Go to `http://localhost:2480`
 - Create a database:
 1. Select `NEW DB` button.
+
 ![](readme-pictures/db_create_1.png)
 2. Set **Name** as `tasks`, **Server Password** as `really_hard_pass`, select **Create Admin user** checkbox and set **Admin Password** as `admin`.
+
 ![](readme-pictures/db_create_2.png)
 - Stop containers using `Ctrl+C`
 - Use `docker compose up` again
