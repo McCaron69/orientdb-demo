@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  orientdb:
+    container_name: orientdb
+    image: orientdb:latest
+    environment:
+      ORIENTDB_ROOT_PASSWORD: 'really_hard_pass'
+    ports:
+      - "2424:2424"
+      - "2480:2480"
+    volumes:
+      - ./orientdb/config:/opt/orientdb/config
+      - ./orientdb/databases:/opt/orientdb/databases
+      - ./orientdb/backup:/opt/orientdb/backup
+  todo-app:
+    container_name: todo-app
+    image: mccaron/todo-app:v1
+    ports:
+      - "8080:8080"
+    links:
+      - "orientdb:orientdb"
