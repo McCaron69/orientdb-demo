@@ -54,5 +54,3 @@ Possbilities:
 - Document
 - Key/Value
 - Object
-- Reactive
-- Geospatial
