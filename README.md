@@ -22,7 +22,7 @@ ___
 ![](readme-pictures/db_create_2.png)
 - Stop containers using `Ctrl+C`
 - Use `docker compose up` again
-- Now you can test todo app, which could be accessed through `http://localhost:8080/` and OriendDB through `http://localhost:2480`
+- Now you can test todo app, which could be accessed through `http://localhost:8080/todo` and OriendDB through `http://localhost:2480`
 ___
 # OrientDB overview
 - OrientDB is an open-source NoSQL database.
